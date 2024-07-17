@@ -11,7 +11,7 @@ const router = express.Router();
 
 router.post("/bookRegister",upload.single('image'),bookRegister)
 router.get("/allBooks",getAllBooks);
-router.route("/updateBook/:id").put(updateBooks)
+router.put("/updateBook/:id",updateBooks)
 router.put("/image/:id/image",upload.single('image'),
 updateBookImage
 ),
